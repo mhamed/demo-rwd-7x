@@ -3,7 +3,8 @@
 HTML ELEMENTS
 ------------------------------------------------- */
 body {
-  font: 11px/165% 'Lucida Grande', Verdana, Helvetica, sans-serif;
+  font: 0.6875em/165% 'Lucida Grande', Verdana, Helvetica, sans-serif;
+  /* 11px / 16px = 0.6875em */
   color: #2a2534;
   margin: 0;
   padding: 0 0 50px 0;
@@ -125,7 +126,7 @@ blockquote {
   border: 1px solid #F0F0F0;
   background: #f8f8f8 url(../images/quote.gif) no-repeat 12px 12px;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 1.54545454545em; /* 17px / 11px */ 
   line-height: 1.5em;
   font-style: italic;
   font-family: Georgia, 'Times New Roman', Times, Serif;
@@ -175,7 +176,7 @@ th, td {
 }
 th {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 1.27272727273em; /* 14px / 11px */
   background: #7db84a;
   padding: .8em 1em;
   border-color: #F3ECD5 #EDE4C5 #DAC88C #EDE4C5;
@@ -315,7 +316,8 @@ LAYOUT
   position: absolute;
   margin: 0;
   padding: 0 5px 0 0;
-  font: 48px Georgia, 'Times New Roman', Times, serif;
+  font: 1.17936117936em Georgia, 'Times New Roman', Times, serif;
+  /* 48/40.7 = 1.17936117936 */
   font-weight: normal;
   letter-spacing: -1px;
   color: #e96b3c;
@@ -335,10 +337,10 @@ LAYOUT
   padding: 0;
   font-family: Georgia, 'Times New Roman', Times, Serif;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 1.54545454545em; /* 17/11=1.54545454545 */
   line-height: 1.1em;
   font-style: italic;
-  letter-spacing: -.5px;
+  letter-spacing: -0.0294117647em; /* -0.5px/17px = 0.0294117647 */
   color: #7db84a;
   width: 400px;
 
