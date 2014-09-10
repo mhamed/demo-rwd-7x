@@ -1,4 +1,4 @@
-
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
 /* ----------------------------------------------
 HTML ELEMENTS
 ------------------------------------------------- */
@@ -33,7 +33,7 @@ a:hover.more-link {
 }
 /* Headers */
 h1, h2, h3, h4 {
-  font: bold 1em/1.5em Georgia, 'Times New Roman', Times, serif;
+  font: bold 1em/1.5em 'Bree Serif', Georgia, 'Times New Roman', Times, serif;
   color: #2a3524;
   padding: 10px 0 7px 0;
 }
@@ -127,7 +127,7 @@ blockquote {
   font-size: 1.54545454545em; /* 17px / 11px */ 
   line-height: 1.5em;
   font-style: italic;
-  font-family: Georgia, 'Times New Roman', Times, Serif;
+  font-family: 'Bree Serif', Georgia, 'Times New Roman', Times, Serif;
   color: #555;
 }
 del,
@@ -287,35 +287,30 @@ input.button {
 /* ------------------------------------------
 LAYOUT
 ------------------------------------------- */
-#header-wrap {
-  /*width: 100%;
-  background: #fff url(../images/bg.gif) repeat-x ;
-  margin: 0;
-  padding: 0;*/
-}
+
 #header {
-  position: relative;
+  /*position: relative;*/
   margin: 0 auto;
-  height: 222px;
+  /*height: 222px;*/
   border-top: 14px solid #5C4B45;
   text-align: left;
 }
 #header-main {
 
-  height: 172px;
-  position: relative;
-  top: 50px;
-  border-top: 6px solid #5C4B45;
+  /*height: 172px;*/
+  /*position: relative;*/
+  /*top: 50px;*/
+  /*border-top: 6px solid #5C4B45;*/
 }
 #header h1#logo-text {
-  margin: 0;
+  margin: 0.3em 0 0 0;
   padding: 0;
 }
 #header h1#logo-text a {
-  position: absolute;
-  margin: 0 166px 0 0; /* width of logo image */
+  /*position: absolute;*/
+  margin: 0;
   padding: 0;
-  font: 1.17936117936em Georgia, 'Times New Roman', Times, serif;
+  font: 1.17936117936em/0.8em 'Bree Serif', Georgia, 'Times New Roman', Times, serif;
   /* 48/40.7 = 1.17936117936 */
   font-weight: normal;
   letter-spacing: -1px;
@@ -324,29 +319,29 @@ LAYOUT
   z-index: 10;
 
   /* change the values of top and left to adjust the position of the logo*/
-  top: 30px;
+  /*top: 30px;
   left: 40px;
+  */
 }
 #header h1#logo-text a:hover {
   border: none;
 }
 #header p#slogan {
-  position: absolute;
+  /*position: absolute;*/
   margin: 0;
   padding: 0;
-  font-family: Georgia, 'Times New Roman', Times, Serif;
+  font-family: 'Bree Serif', Georgia, 'Times New Roman', Times, Serif;
   font-weight: normal;
   font-size: 1.54545454545em; /* 17/11=1.54545454545 */
   line-height: 1.1em;
   font-style: italic;
   letter-spacing: -0.0294117647em; /* -0.5px/17px = 0.0294117647 */
   color: #7db84a;
-  width: 400px;
 
   /* change the values of top and left to adjust the position */
-  top: 88px;
+  /*top: 88px;
   left: 40px;
-  z-index: 20;
+  z-index: 20;*/
 }
 
 #header .logo {
@@ -399,15 +394,17 @@ form#search-block-form label {
 
 /* Navigation */
 #header #nav {
-  position: absolute;
-  margin: 0;
+  border-bottom: 4px solid #5C4B45;
+  /*position: absolute;*/
+  margin: 22px 0 0;
   padding: 0;
-  width: 91.666666666%; /* 880 / 960 = 0.91666666666 = 91.666666666% */
-  left: 0;
-  top: 22px;
+  width: 100%;
+  height: 26px;
+  /*left: 0;
+  top: 22px;*/
 }
 #header #nav ul {
-  float: left;
+  /*float: left;*/
   list-style: none;
   margin: 0;
   height: 26px;
@@ -417,7 +414,7 @@ form#search-block-form label {
 }
 #header #nav ul li {
   float: left;
-  height: 26px;
+  height: 22px; /* was 26px, changed to compensate for border */
   margin: 0;
   padding: 5px 0 0 10px;
   border-top: 1px solid #5C4B45;
@@ -464,7 +461,7 @@ form#search-block-form label {
 /* Main column */
 
 #main h2 {
-  font: normal 2.6em Georgia, 'Times New Roman', Times, Serif;
+  font: normal 2.6em 'Bree Serif', Georgia, 'Times New Roman', Times, Serif;
   color: #2a3524;
   letter-spacing: -1.7px;
   margin-left: 5px;
@@ -494,7 +491,7 @@ form#search-block-form label {
   background: #7db84a;
   padding: 5px 20px;
   color: #ffffff;
-  font: normal 1.6em Georgia, 'Times New Roman', Times, Serif;
+  font: normal 1.6em 'Bree Serif', Georgia, 'Times New Roman', Times, Serif;
 }
 
 .node-readmore a:active,
@@ -504,7 +501,7 @@ form#search-block-form label {
   background: #e96b3c;
   padding: 5px 20px;
   color: #ffffff;
-  font: normal 1.6em Georgia, 'Times New Roman', Times, Serif;
+  font: normal 1.6em 'Bree Serif', Georgia, 'Times New Roman', Times, Serif;
 }
 .comment_forbidden {
   visibility: hidden;
@@ -533,7 +530,7 @@ div.dateblock {
   border-bottom: 1px solid #7db84a;
   color: #2a3524;
   text-align: center;
-  font-family: Georgia, Arial, Verdana, sans;
+  font-family: 'Bree Serif', Georgia, Arial, Verdana, sans;
 }
 div.dateblock span {
   display: block;  
@@ -559,7 +556,7 @@ div.dateblock span.year {
 /* Sidebars */
 #sidebar h3, #sidebar h2 {
   color: #7db84a;
-  font: normal 2em Georgia, 'Times New Roman', Times, Serif;
+  font: normal 2em 'Bree Serif', Georgia, 'Times New Roman', Times, Serif;
   letter-spacing: -0.5px;
   padding: 0 0 5px;
   margin: 20px 0 5px 0;
@@ -569,7 +566,7 @@ div.dateblock span.year {
 .sidebar-right h4,
 .sidebar-right .views-field-title {
   color: #A45E35;
-  font: normal 2em Georgia, 'Times New Roman', Times, Serif;
+  font: normal 2em 'Bree Serif', Georgia, 'Times New Roman', Times, Serif;
   letter-spacing: -0.5px;
   padding: 0;
   margin: 10px 0 0 0;
@@ -610,7 +607,7 @@ div.dateblock span.year {
 }
 #footer-wrapper h3 {
   color: #444;
-  font: normal 1.8em Georgia, 'Times New Roman', Times, Serif;
+  font: normal 1.8em 'Bree Serif', Georgia, 'Times New Roman', Times, Serif;
   text-transform: none;
   letter-spacing: -0.5px;
 }
@@ -648,7 +645,7 @@ div.dateblock span.year {
 #footer-wrapper ul.footer-list li a span {
   font-style: italic;
   font-weight: normal;
-  font-family: Georgia, 'Times New Roman', Times, Serif;
+  font-family: 'Bree Serif', Georgia, 'Times New Roman', Times, Serif;
 }
 #footer-wrapper ul.footer-list li a:hover,
 #footer-wrapper ul.footer-list li a:hover span {
@@ -985,4 +982,8 @@ div.view div.views-admin-links {
   white-space: nowrap;
   overflow: hidden;
   display: block;
+}
+
+.skipnav {
+  display: none;
 }
