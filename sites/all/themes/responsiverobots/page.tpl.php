@@ -2,11 +2,7 @@
     <?php //hide($page['header']['search_form']); ?>
     <div id="header-wrap">
       <div id="header" class="container_12">
-        <div id="header-main">
-          <div class="logo"><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>"></div>
-          <h1 id="logo-text"><a href="<?php print $front_page; ?>"><?php print $site_name; ?></a></h1>
-          <p id="slogan"><?php print $site_slogan; ?></p>
-        </div><!-- navigation -->
+        <!-- navigation -->
         <div id="nav">
           <?php print theme('links__system_main_menu', array(
             'links' => $main_menu,
@@ -21,12 +17,17 @@
             ),
           )); ?>
         </div>
+        <div id="header-main">
+          <div class="logo"><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>"></div>
+          <h1 id="logo-text"><a href="<?php print $front_page; ?>"><?php print $site_name; ?></a></h1>
+          <p id="slogan"><?php print $site_slogan; ?></p>
+        </div>
+
         <?php //show($page['header']['search_form']); ?>
         <?php print render($page['header']); ?>
       </div>
     </div>
     <!-- header ends here -->
-    
     <!-- content starts -->
     <div id="content-wrapper" class="container_12">
 
