@@ -5,6 +5,69 @@
 	Licensed under GPL and MIT.
 */
 
+/* Mobile and Small Tablet */
+
+@media screen and (max-width: 750px) {
+  .container_12,
+  .container_16
+  {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+  }
+  /* =Grid >> Global
+  --------------------------------------------------------------------------------*/
+
+  .grid_1,
+  .grid_2,
+  .grid_3,
+  .grid_4,
+  .grid_5,
+  .grid_6,
+  .grid_7,
+  .grid_8,
+  .grid_9,
+  .grid_10,
+  .grid_11,
+  .grid_12,
+  .grid_13,
+  .grid_14,
+  .grid_15,
+  .grid_16
+  {
+    display: block;
+    margin-left: 1.041666666%; /* 10 / 960 = 0.01041666666 = 1.041666666% */
+    margin-right: 1.041666666%;
+  }
+
+  .container_12 .grid_3,
+  .container_16 .grid_4
+  {
+    width: 97.916666666%; /* 220 / 960 = 0.22916666666 = 22.916666666% */
+  }
+
+  .container_12 .grid_6,
+  .container_16 .grid_8
+  {
+    width: 97.916666666%; /* 460 / 960 = 0.47916666666 = 47.916666666% */
+  }
+
+  .container_12 .grid_9,
+  .container_16 .grid_12
+  {
+    width: 97.916666666%; /* 700 / 960 = 0.72916666666 = 72.916666666% */
+  }
+
+  .container_12 .grid_12,
+  .container_16 .grid_16
+  {
+    width: 97.916666666%; /* 940 / 960 = 0.97916666666 = 97.916666666% */
+  }
+}
+
+/* Tablet and Desktop */
+
+@media screen and (min-width: 751px) {
 /* =Containers
 --------------------------------------------------------------------------------*/
 
@@ -121,7 +184,7 @@
 {
   width: 89.583333333%; /* 860 / 960 = 0.89583333333 = 89.583333333% */
 }
-
+}
 /* =Grid >> 16 Columns
 --------------------------------------------------------------------------------*/
 

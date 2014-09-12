@@ -290,7 +290,7 @@ LAYOUT
 
 #header {
   /*position: relative;*/
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   /*height: 222px;*/
   border-top: 14px solid #5C4B45;
   text-align: left;
@@ -450,7 +450,7 @@ form#search-block-form label {
   border-top: 4px solid #7db84a;
 }
 #content-wrapper {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   padding-bottom: 35px;
   padding-top: 5px;
   overflow: auto;
@@ -602,7 +602,7 @@ div.dateblock span.year {
 /* Footer */
 #footer-wrapper {
   clear: both;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   text-align: left;
 }
 #footer-wrapper h3 {
