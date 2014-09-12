@@ -3,7 +3,7 @@
     <div id="header-wrap">
       <div id="header" class="container_12">
         <!-- navigation -->
-        <div id="nav">
+        <div id="nav" class="grid_12">
           <?php print theme('links__system_main_menu', array(
             'links' => $main_menu,
             'attributes' => array(
@@ -17,7 +17,7 @@
             ),
           )); ?>
         </div>
-        <div id="header-main">
+        <div id="header-main" class="grid_12">
           <div class="logo"><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>"></div>
           <h1 id="logo-text"><a href="<?php print $front_page; ?>"><?php print $site_name; ?></a></h1>
           <p id="slogan"><?php print $site_slogan; ?></p>
