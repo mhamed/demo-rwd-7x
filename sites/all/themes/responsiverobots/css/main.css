@@ -393,11 +393,6 @@ form#search-block-form label {
 }
 
 /* Navigation */
-@media screen and (max-width: 750px) {
-  #nav {
-    display: none;
-  }
-}
 #header #nav {
   border-bottom: 4px solid #5C4B45;
   /*position: absolute;*/
