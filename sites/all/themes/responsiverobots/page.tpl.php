@@ -46,7 +46,7 @@
         <div id="content-output">
           <div id="breadcrumb" class="grid_12"><?php print $breadcrumb; ?></div>
           <?php print render($title_prefix); ?>
-          <?php if (!empty($title)): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+          <?php if (!empty($title)): ?><h2 class="title" id="page-title"><?php print $title; ?></h2><?php endif; ?>
           <?php print render($title_suffix); ?>
           <?php print render($page['content']); ?>
         </div><!-- /#content-output -->
