@@ -280,65 +280,66 @@ input.button {
 LAYOUT
 ------------------------------------------- */
 
-#header {
-  /*position: relative;*/
-  /*margin: 0 auto;*/
-  /*height: 222px;*/
-  border-top: 14px solid #5C4B45;
-  text-align: left;
-}
-#header-main {
+@media screen and (max-width: 750px) {
+  .logo,
+  #slogan {
+    display: none;
+  }
+  h1#logo-text a {
+    text-indent: -9999px;
+    background-image: url(../images/anytown-small.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 38px;
+    width: 150px;
+    display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  h1#logo-text {
 
-  /*height: 172px;*/
-  /*position: relative;*/
-  /*top: 50px;*/
-  /*border-top: 6px solid #5C4B45;*/
+  }
 }
-#header h1#logo-text {
-  margin: 0.3em 0 0 0;
-  padding: 0;
-}
-#header h1#logo-text a {
-  /*position: absolute;*/
-  margin: 0;
-  padding: 0;
-  font: 1.17936117936em/0.8em 'Bree Serif', Georgia, 'Times New Roman', Times, serif;
-  /* 48/40.7 = 1.17936117936 */
-  font-weight: normal;
-  letter-spacing: -1px;
-  color: #e96b3c;
-  text-decoration: none;
-  z-index: 10;
+@media screen and (min-width: 751px) {
+  #header {
+    border-top: 14px solid #5C4B45;
+    text-align: left;
+  }
+  #header h1#logo-text {
+    margin: 0.3em 0 0 0;
+    padding: 0;
+  }
+  #header h1#logo-text a {
+    margin: 0;
+    padding: 0;
+    font: 1.17936117936em/0.8em 'Bree Serif', Georgia, 'Times New Roman', Times, serif;
+    /* 48/40.7 = 1.17936117936 */
+    font-weight: normal;
+    letter-spacing: -1px;
+    color: #e96b3c;
+    text-decoration: none;
+    z-index: 10;
+  }
+  #header h1#logo-text a:hover {
+    border: none;
+  }
+  #header p#slogan {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bree Serif', Georgia, 'Times New Roman', Times, Serif;
+    font-weight: normal;
+    font-size: 1.54545454545em; /* 17/11=1.54545454545 */
+    line-height: 1.1em;
+    font-style: italic;
+    letter-spacing: -0.0294117647em; /* -0.5px/17px = 0.0294117647 */
+    color: #7db84a;
+  }
 
-  /* change the values of top and left to adjust the position of the logo*/
-  /*top: 30px;
-  left: 40px;
-  */
-}
-#header h1#logo-text a:hover {
-  border: none;
-}
-#header p#slogan {
-  /*position: absolute;*/
-  margin: 0;
-  padding: 0;
-  font-family: 'Bree Serif', Georgia, 'Times New Roman', Times, Serif;
-  font-weight: normal;
-  font-size: 1.54545454545em; /* 17/11=1.54545454545 */
-  line-height: 1.1em;
-  font-style: italic;
-  letter-spacing: -0.0294117647em; /* -0.5px/17px = 0.0294117647 */
-  color: #7db84a;
-
-  /* change the values of top and left to adjust the position */
-  /*top: 88px;
-  left: 40px;
-  z-index: 20;*/
-}
-
-#header .logo {
-  float: right;
-  padding: 3px;
+  #header .logo {
+    float: right;
+    padding: 3px;
+  }
 }
 
 
@@ -430,6 +431,34 @@ form#search-block-form label {
 }
 #header #nav ul li.active a {
   color: #FFF;
+}
+
+/* Responsive Menu Style Overrides */
+.responsive-menus.responsified span.toggler {
+  background: none;
+  color: #333;
+  box-shadow: none;
+  text-align: right;
+  float: right;
+  padding: 1em 1% 0;
+  font-size: 1.5em;
+  width: 5em;
+}
+
+.responsive-menus.responsified.responsive-toggled span.toggler {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 0px;
+}
+
+.responsive-menus.responsified .responsive-menus-simple {
+  background-color: transparent;
+}
+.responsive-menus.responsified .responsive-menus-simple li a {
+  color: #e96b3c;
+  border: none;
+  text-align: right;
+  padding: 0.5em 1em;
 }
 
 /* Content */
