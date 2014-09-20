@@ -146,7 +146,7 @@ small {
 img, embed, iframe, object {
   max-width: 100%;
 }
-.view-home-slideshow {
+.view-home-slideshow img {
   height: auto;
 }
 
