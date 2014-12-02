@@ -918,41 +918,48 @@ div.view div.views-admin-links {
 }
 
 /* Call out */
-.callout-wrapper {
-  background: #7db84a url('../images/green_pattern.jpg') repeat top left;
-  height: 185px;
-  padding: -65px 0 0 0;
-  margin: 65px 0 0 0;
-  position: relative;
-  z-index: 0;
-  border: 4px solid white;
+@media screen and (max-width: 750px) {
+  .callout-wrapper {
+    display: none;
+  }
 }
+@media screen and (min-width: 751px) {
+  .callout-wrapper {
+    background: #7db84a url('../images/green_pattern.jpg') repeat top left;
+    height: 185px;
+    padding: -65px 0 0 0;
+    margin: 65px 0 0 0;
+    position: relative;
+    z-index: 0;
+    border: 4px solid white;
+  }
 
-.callout {
-  background: transparent url('../images/farmer_jim.png') no-repeat bottom right;
-  position: relative;
-  top: -65px;
-  height: 250px;
-  z-index: 1;
+  .callout {
+    background: transparent url('../images/farmer_jim.png') no-repeat bottom right;
+    position: relative;
+    top: -65px;
+    height: 250px;
+    z-index: 1;
 
-}
+  }
 
-.callout blockquote {
-  background: transparent;
-  border-width: 0px;
-  padding: 85px 235px 0px 30px;
-  margin: 0;
-  color: #FFFFFF;
+  .callout blockquote {
+    background: transparent;
+    border-width: 0px;
+    padding: 85px 235px 0px 30px;
+    margin: 0;
+    color: #FFFFFF;
 
-}
+  }
 
-.callout cite:before {
-  content: "—";
-  padding-left: 0.5em;
-}
+  .callout cite:before {
+    content: "—";
+    padding-left: 0.5em;
+  }
 
-.callout cite {
-  color: #2a3524;
+  .callout cite {
+    color: #2a3524;
+  }
 }
 
 /* Social Menu */
@@ -1011,3 +1018,62 @@ div.view div.views-admin-links {
 .skipnav {
   display: none;
 }
+
+/* Responsive Tables */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+table a {
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 530px) {
+  th {
+    display: none;
+  }
+  td {
+    display: list-item;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  td.band {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  td.location {
+    font-family: "Bree Serif", Georgia, "Times New Roman", Times, serif;
+    font-size: 1.8em;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    list-style-type: none;
+    margin: 1em 0 0.5em;
+    color: #7db84a;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
