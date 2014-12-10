@@ -142,6 +142,9 @@ small {
 }
 
 /* Images */
+img, embed, iframe, object {
+  max-width: 100%;
+}
 .view-home-slideshow img {
   background: #FAFAFA;
   border: 1px solid #DCDCDC;
